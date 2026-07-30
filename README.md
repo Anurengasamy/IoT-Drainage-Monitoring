@@ -1,58 +1,53 @@
-# IoT-Drainage-Monitoring
 # Automated IoT-Based Drainage Monitoring and Solid Waste Management
 
-## 📌 Overview
-Urbanization increases drainage system load, leading to blockages, overflow, and hygiene issues.  
-This project leverages **IoT sensors, Arduino, and real-time monitoring platforms** to detect wastewater levels, toxic gases, and blockages, ensuring timely intervention and improved urban hygiene.
+A complete IoT project demonstrating **Arduino programming**, **sensor integration**, **real-time monitoring**, and **IoT dashboard visualization**.  
+This repository showcases hardware + software implementation, simulation in Java, and cloud integration using ThingSpeak/Blynk.
 
 ---
 
-## 🎯 Objectives
-- Real-time monitoring of drainage systems using IoT.
-- Detect wastewater levels and blockages via ultrasonic sensors.
-- Identify toxic gases (Methane, Hydrogen Sulfide) for worker safety.
-- Provide live updates via LCD and IoT dashboards (ThingSpeak/Blynk).
-- Trigger buzzer alerts for immediate action.
-- Enhance urban hygiene through automated solid waste management.
+## 📚 Contents
+🔹 Arduino Code (`drainage_monitor.ino`) – Ultrasonic + Gas sensor monitoring  
+🔹 Java Simulation (`DrainageMonitoring.java`) – Console-based simulation of sensor logic  
+🔹 IoT Integration (`iot_integration.ino`) – ESP8266/NodeMCU code for ThingSpeak dashboard  
+🔹 Documentation (`project_report.pdf`, `presentation.pptx`) – Project report and slides  
+🔹 README.md – Project overview and usage guide  
 
 ---
 
-## 🏗️ System Architecture
-- **Ultrasonic Sensor** → Wastewater level detection  
-- **Gas Sensor (MQ-4/MQ-135)** → Toxic gas detection  
-- **Arduino Uno / NodeMCU** → Microcontroller  
-- **IoT Platform (ThingSpeak/Blynk)** → Real-time monitoring  
-- **LCD Display** → Local status updates  
-- **Buzzer** → Alerts for critical issues  
+## 🚀 Project: IoT Drainage Monitoring System
+
+### 📄 Description
+This project addresses urban drainage challenges like **blockages, overflow, and toxic gas hazards**.  
+It uses **IoT sensors, Arduino, and cloud dashboards** to provide **real-time monitoring and automated alerts** for timely intervention.
 
 ---
 
-## ⚙️ Modules
-1. **Ultrasonic Sensor Module** – Detects water levels & blockages.  
-2. **Gas Sensor Module** – Detects harmful gases.  
-3. **IoT Module** – Sends data to cloud dashboards.  
-4. **LCD Display Module** – Shows real-time status.  
-5. **Buzzer Module** – Alerts stakeholders.  
-6. **Microcontroller Module** – Integrates all components.  
+### ✨ Features
+- 🌊 Measure wastewater levels using ultrasonic sensors  
+- 🧪 Detect toxic gases (Methane, Hydrogen Sulfide) with MQ sensors  
+- 📟 Display live readings on LCD  
+- 🔔 Trigger buzzer alerts for critical issues  
+- 🌐 Send data to IoT dashboards (ThingSpeak/Blynk) for remote monitoring  
 
 ---
 
-## 🛠️ Implementation Platform
-- **Arduino IDE** for coding and uploading firmware.  
-- **ThingSpeak / Blynk** for IoT data visualization.  
-- **LCD Display** for local monitoring.  
-- **Reliable Power Supply** for continuous operation.  
+### 🧠 Concepts Used
+- ⚡ Arduino Programming (C++)  
+- 📡 IoT Cloud Integration (ThingSpeak/Blynk)  
+- 🖥️ Java Simulation for sensor logic  
+- 🔁 Real-time monitoring & alert systems  
+- 🛠️ Hardware integration (Ultrasonic, Gas sensors, LCD, Buzzer)  
 
 ---
 
-## 🚀 Work Plan
-1. System Design & Component Selection  
-2. Hardware Integration  
-3. Sensor Calibration & Testing  
-4. IoT & Alert System Implementation  
-5. Testing & Debugging  
-6. Deployment & Optimization  
+## 💡 How to Run
 
----
+### Arduino Code
+1. Open `drainage_monitor.ino` in Arduino IDE.  
+2. Connect ultrasonic sensor, gas sensor, LCD, and buzzer to Arduino Uno.  
+3. Upload the code and monitor readings via LCD + Serial Monitor.  
 
-## 📂 Repository Structure
+### Java Simulation
+```bash
+javac DrainageMonitoring.java
+java DrainageMonitoring
